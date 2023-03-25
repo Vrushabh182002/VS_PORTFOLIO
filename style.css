@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background: url('img/BG.jpg');
+    background-size: cover;
+	background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 67px;
+    text-decoration: none;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: light;
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(229, 64, 64);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.text{
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.text h1{
+    margin-top: 15px;
+    font-size: 64px;
+}
+.text h1 span{
+    color: red;
+}
+#about{
+    padding: 80px 0;
+}
+.txt{
+    padding-top: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Popins', sans-serif;
+    font-style: normal;
+    text-align: justify;
+}
+.text{
+    padding: 10% 0 0 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 40%;
+}
+.col-2{
+    flex-basis: 55%;
+}
+.ref a{ 
+    color:rgb(20, 54, 116);
+}
+.col-1 img{
+    width: 100%;
+    height: 100vh;
+    border-radius: 4%;
+}
+.title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.links{
+    margin-right: 60px;
+    font-size: 15px;
+    font-weight: 750;
+    cursor: pointer;
+    position: relative;
+}
+.links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(229, 64, 64);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+.links.active-link::after{
+    width: 60%;
+} 
+#education-name{
+	font-size: 18px;
+    color: navy;
+}
+#education-degree{
+	font-size: 16px; 
+	font-weight: 600;
+	color: rgb(126, 120, 120);
+}
+#education-score{
+	font-size: 14px; 
+	font-weight: 500; 
+	color: white; 
+	text-align: left;
+}
+.skillimg {
+	margin-right:4px;
+}
+#skill div {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#skilltext {
+	text-align: center;
+}
+
+#skill {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 5px;
+	margin-top: 18px;
+	margin-bottom: 15px;
+}
+
+#skill img {
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.contents ul li span{
+    font-size: 15px;
+    color: blueviolet;
+}
+.contents ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+}
+.contents{
+    display: none;
+}
+.contents.active-tab{
+    display: block;
+}
+#interest{
+    padding: 13px;
+    width: 80%;
+}
+#certificates ul li a{
+    color: lightskyblue;
+    display: flex;
+    justify-content: left-center;
+}
+#activity{
+    padding: 30px 0;
+}
+.activity-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.activity-list div{
+    background: grey;
+    padding: 42px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: background 0.2s, transform 0.5s;
+}
+.activity-list div i{
+    font-size: 56px;
+    margin-bottom: 25px;
+}
+.activity-list div h2{
+    font-size: 28px;
+    font-weight: 900;
+    margin: 12px 0;
+    color: rgba(243, 59, 39, 0.916);
+}
+.activity-list div a{
+    text-decoration: none;
+    color: rgb(30, 97, 219);
+    font-size: 17px;
+    margin-top: 13px;
+    display: inline-block;
+}
+.activity-list div:hover{
+    background: rgb(178, 25, 195);
+    transform: translateY(-12px);
+}
+#work{
+    padding: 45px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.working{
+    width: 100%;
+    height: 100%;
+    background: grey;
+    padding: 42px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: background 0.2s, transform 0.5s;
+}
+.working i{
+    display: flex;
+    font-size: 50px;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+.working h3{
+    font-size: 25px;
+    margin: 12px 0;
+    color: rgba(243, 59, 39, 0.916);
+}
+.working p{
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Popins' sans-serif;
+    color: white;
+}
+.working a{
+    text-decoration: none;
+    color: rgb(35, 104, 233);
+}
+.working a i{
+    font-size: 15px;
+    display: block;
+}
+.working:hover{
+    background: rgb(178, 25, 195);
+    transform: translateY(12px);
+}
+.button{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 3px solid rgba(243, 59, 39, 0.916);
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+}
+.button:hover{
+    background: rgba(243, 59, 39, 0.916);
+}
+.left{
+    flex-basis: 40%;
+}
+.right{
+    flex-basis: 55%;
+}
+.left p{
+    margin: 15px 0;
+}
+.left p i{
+    color: blue;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.social-media{
+    margin-top: 25px;
+}
+.social-media a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 25px;
+    color: aliceblue;
+    display: inline-block;
+    transition: transform 0.4s;
+}
+.social-media a:hover{
+    color: rgba(243, 59, 39, 0.916);
+    transform: translateY(-6px);
+}
+.button.btn{
+    display: inline-block;
+    background: rgba(243, 59, 39, 0.916);
+}
+.right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+}
+form .btn{
+    padding: 15px 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+nav .fa-solid{
+    display: none;
+}
+
+#recieve{
+    color: green;
+    margin-top: -40px;
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        font-size: 30px;
+    }
+    .logo a{
+        font-size: 30px;
+    }
+    .text{
+        margin-top: 5px;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 32px;
+    }
+    .text{
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .text span{
+        color: red;
+    }
+    .text h1{
+        font-size: 36px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #f33b27ea;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav .fa-bars{
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+    }
+    .text{
+        font-size: 40px;
+    }
+    .col-1, .col-2{
+        flex-basis: 100%;
+    }
+    .col-1{
+        margin-bottom: 32px;
+    }
+    .col-2 h1{
+        font-size: 38px;
+    }
+    .col-2 .txt{
+        font-size: 14px;
+        text-align: justify;
+        margin-right: 20px;
+    }
+    .links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .left, .right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        width: 100%;
+        font-size: 14px;
+    }
+}

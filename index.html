@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b1b98264a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><a href="index.html">VS</a></h1> 
+                <ul id="slide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#activity">Domains</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text">
+                <div>
+                    <h1>Hey, I'm <span> Vrushabh </span> Somani</h1><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="img/About.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="text">About Me</h1>
+                    <p class="txt">Hello, I'm Vrushabh Somani a Pre-Final year Student. Currently pursuing my Degree in B.Tech   Computer Science Engineering with Specialisation in Artificial Intelligence & Machine Learning at SRMIST Chennai. Currently a Front-End Web Developer but on a journey to becoming a Full Stack Web Developer. He is strong at Adapting his surroundings in a short time period. A good Team Player and also efficient of a Team Leader.</p><br>
+                    <div class="title">
+                        <p class="links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="links" onclick="opentab('education')">Education</p>
+                        <p class="links" onclick="opentab('interests')">Interest</p>
+                        <p class="links" onclick="opentab('certificates')">Certificates</p>
+                    </div> 
+                    <div class="contents active-tab" id="skills">
+                        <div class = "skillimg">
+                            <div id = "skill">
+                                <div>
+                                    <img id = "skillimage" src="img/HTML5.png">
+                                    <p id = "skilltext">HTML</p>
+                                </div>
+                                <div>
+                                    <img id = "skillimage" src="img/CSS.png">
+                                    <p id = "skilltext">CSS</p>
+                                </div>
+                                <div>
+                                    <img id = "skillimage" src="img/JavaScript.png">
+                                    <p id = "skilltext">JavaScript</p>
+                                </div>
+                                <div class = "cpp">
+                                    <img id = "skillimage" src="img/Java.png">
+                                    <p id = "skilltext">Java</p>
+                                </div>
+                                <div class = "c">
+                                    <img id = "skillimage" src="img/C.png">
+                                    <p id = "skilltext">C</p>
+                                </div>
+                                <div>
+                                    <img id = "skillimage" src="img/C++.png">
+                                    <p id = "skilltext">C++</p>
+                                </div>
+                                <div>
+                                    <img id = "skillimage" src="img/Python.png">
+                                    <p id = "skilltext">Python</p>
+                                </div>
+                                <div>
+                                    <img id = "skillimage" src="img/SQL.png">
+                                    <p id = "skilltext">SQL Plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents" id="interests">
+                        <div id="interest">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVR4nO2YTQ6CMBCFe4+5hlxOF0ZN8CcR44YV3kUgXKQnqCfANFgTwAkMC9vA+5K3fKVfOkBAKQAACB7KdEUPXf9MpsvQ1u3BXuQTFdi6PSDAQDiBuY5Q9DRVlL/qJqb0JRB19jFe4Ftq4k0gb+8DAoQTaEMYIQbcxL5GKE7S6nhLe8WhC9nOlJBQwHbiJOXfB4fLvbaRCrieNCQUcD1WYBtfaxupgOtJQ0IB12MF1rtzudmfxQK2MyUkFGh6p2LwXsBTaCSEFxkDRmgkhBGa7wiZ0pVWuSn8CZjWPpbzUd8FAgyEE1jMCGWa/7mV6SK0dQEAAACg/sQbcsW4AKYasWAAAAAASUVORK5CYII=" >
+                            <h2>Gym</h2>
+                        </div>
+                        <div class="interestimg">
+                        <div id="interest">
+                            <img src="data:image/png;base64,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" >
+                            <h2>Anime</h2>
+                        </div>
+                    </div>
+                        <div id="interest">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADP0lEQVR4nO1WTU9TQRR9CexIjAujG93oxrjzI0L8AZhgokvduNGN/0CiMTFx5xcFBY0QUYhiMIEEFtCZSo2uKC0fRgmUzi2sUBEXxgjvjjpmXnl0KH3z3uNR4mJOclNo7pxzz9w707EsA4PKIMHEPgL8HmUcCCBS4DLSIwvieIUkLZLDE4TxjNRyNBkHCvyurCUU0Zs5PEUBv1DgojQIw78UsLNXiKrtKrxXiCqawy4KkruMJuBnkse6YMVnVw5Rht/LEW0ktWl8UdRELT6+KGoosxN+epThMl1YOehLSACpL1mRNJ5MiuqtFp9MiuqwelrCBMOTgcnWSfnNrRogjN8Kq5eYt495ElLGY2py6+CoqD9/yYnWgZTHKCEO51cPhy0+Mb96ZO1y2MSp0yXA73sbAJ5WkyVB7elzTtRfuOx9Hhj2hDVAAF978el0CfCUtwGGyw0Xr6wnuyRuqERqHmX4Z3hOHAhafDIr9lOGv8tyaXRlHgFc0u0Kqgt0Bkr/JwyvBzVAAW/ouGo9dOXfskZvAwy/bakDhdaOBjWw9mPlyaXrAAX8qtkZPhbmDAxkuYiz4hglZ8Qev+LjObFX5so1w6zAEfIMeG8UZbxpw20wkHIIZLQNbr6Fej6h6JvBInmON/juPvCzbn7fDIpX08X1QXTl88bbQN4+GuZOfjxuOyaUc3AtzPy//IgORxjNeA71bzECSIIQ9c+iiKVs8WxK3UHsDmDghZvfOVngULuoC8JwKOhbaFlHNJRD0ZqxHfH2ieIOEoYjvgYYf+vmPxkvcLRlbMlZ9iEX+i3kdCGPdfIF6LELi08n7QUpLONRRjEAfNa/A3zOzW9LFzjWOpnXacpnjhUGhduC3yHAc4Thr8Invy2/fz7JH7rCD9LqDGuuOHdzAJfc/BbFQNeU3aLTtLYT3R/4GVe4ZUztAP7wW0sZ/nTzm8eKBnqmeb21U+ifELtd4ebUBgPcb63McfNjioHurNhl7SRcYRnqvPqtU3NjCoe10zAGwHQgGswIgRmhaDAjBGaEosGMEJgRigYzQmBGKBrMCIEZoWgwIwRmhKKhMdYhykWl1m07Gpva35cWcTXW8a5S6wys/xT/AMF2aJ3rc4BvAAAAAElFTkSuQmCC">
+                            <h2>Music</h2>
+                        </div>
+                    </div>
+                    <div class="contents" id="education">
+                        <h3 id = "education-name">SRM Institute of Science & Technology, Chennai</h3>
+                    		<p id = "education-degree">B. Tech, Computer Science Engineering with Specialisation in Artificial Intelligence and Machine Learning<br>
+                      		<p id = "education-score"><span>CGPA: 8.68 </span><br>
+                      		<span>Sept' 2020 - Jun' 2024</span></P>
+                    		</p>
+							<br>
+							<h3 id = "education-name">Kola Saraswathi Vaishnav Sr. Sec. School, Chennai</h3>
+                    		<p id = "education-degree">Class XII<br>
+                      		<p id = "education-score"><span>CBSE | 73% </span><br>
+                      		<span>Jun' 2018 - Mar' 2020</span></p>
+                    		</p>
+							<br>
+							<h3 id = "education-name">Doveton Boys' & Girls' Hr. Sec. School, Chennai</h3>
+                    		<p id = "education-degree">Class X<br>
+                      		<p id = "education-score"><span>ICSE | 76%</span><br>
+                      		<span>Apr' 2012 - Mar' 2018</span></p>
+                    		</p>
+                    </div>
+                    <div class="contents" id="certificates">
+                        <ul>
+                            <li><a href="https://drive.google.com/drive/folders/1pBqf_zvDeYtWO8uq-Y1o8Yi2kwO8UyJd?usp=sharing" target="_blank">Click to view the Certificates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Domains -->
+    <div id="activity">
+        <div class="container">
+            <h1 class="text">My Domains</h1>
+            <div class="activity-list">
+                <div>
+                    <img src="data:image/png;base64,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">
+                    <h2>Web Development</h2>
+                    <p>Web development is the process of creating websites & web applications using various programming languages, frameworks, and tools. It involves building the structure, layout, and functionality of websites or web applications, and can range from creating simple static pages to complex dynamic web applications.</p>
+                </div>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEhklEQVR4nO2aX4hVVRTGf+OYpnYdgzI0skgyifKpiFSKGGMqCIOQlMKgh7AXy16KCgptnGkiLKJAepAigsAp7H9kBD0oSREZlhKmNY7FBDVZOhbYjQ3fgcXh/Fn7nHvvhPjBgcPea699vn333uvba184g9MPVwObgI+AEeAYcAr4EXgROB+YC7wE/KS6P4AfgLeA9aqfNKwA9gDNkuc7YH+JzQQwAEzvJIEpwPPAv/qI34CtwB3AQmA2MA1YAuwzH7tPZaGuAVyiNq8CJ2XzOXBup4hsVaf/ABuBcwps7zJE1hTYLRSJJvCJBqutWKnOwjq43mF/uSGyqMQ2DEjyC95DmxBG7CngqGN0LeYYIj0O+9tl+yvwHHAtLcIUTZ9kDofnYORPn7Tz9ncwtRF8AFxMDUwFtptdZVBTJRYxRBJcCmzQdp1sKL1UxLNy8gtwTVUnFYnYdbNN7Y8Dy4nEcm2vE6l5GrbOp7VWxvQefrlWEAl+hrQ+RhVXQn9dwBb5GNG6c2OXGj6ZKh/MCGYDLSISBiXte7PquoFPVfaCl8QSMy9npupGVbcUuLUgUmcR8T63AMv0HvpLcIXkzQmvpNkkJ0EnkUNkmSRKO4j0GiJHUr52qPx+D5GdMg57ehoDJVOriEgZsqZtf8rmXpUHsVmKIzJekFE3TR8+qsU+qPnbCiLJYh/TN/SrP1LTK/g64CEyIeMZHmPHR9fZftNoyNefOHAiQlKkUTT3W4GZJqaUIommV/0PiSySr0Me43dlvKpFnWcRsYHVBr8yrJWv4VJL4GEZvxYRfWOJDBYEvyIMyzYcj91niPGMo2dR9I0hYgNrVvDLwjwd5kJQnE+kRImNvl4iY8ZPElhDWREeld17ROChGtG36tQKZXnoVtYl2N0WI51H1OixCtHXQ2RqSiUMlKjohjkGvyNFXIpHTIMq0ddDxFOXxkVGddyNA1/KOPoQ02YiNvnxGQ4ck3FRmicNj6otaudFj+x/9xgfl3FIdXaKiLf9LL3/5fmoPbG7Q41RjyVymd7DDlaKB2T8RUTap5XTp6j9g3oPB6xSnA18qwZvOBPLnSAy3yiC1d7G4VB1WI32AneW/DqdIDJSNTccsnsfGkfhvuO6jLhi9VdWeiiPiFeANs3zuoJjJWyUk+8zOhrKWJRDTiJeAbo/JzUVjZfl6L6MOiv+enPEX7OmAN1QoDSi8JUcBYlQlB7KE5HNmgJ0Qc4AReOAHJ3nTA/1O6eWV4DONgnDWnhbjsIxsyg9lCciyxZ7mQDtU/vddYmsNj/tlRXa19l+L9Rlami/jproMqnKkCp6RtcMjTYQmaW7kRW61hg3avcsWoDpygWfSs3po45DjodIl7nWa6ae7bFXCR4sVlz52IzWDY6EWlnm8kbZnFTc2Kn1E/6M0HasUuff5OxodqGG56YcmwuMtlvJJCDonff1AT8Dj+t2q0ej32f0WpId7FPdHMmdJ0xQfdN7Fm8HGoq4RQFvh9nC855hLfRJx83AK9oqw9r5W6p5vVI53Xr/WnXjst2mHeoMTjv8B53HcCW4EiPaAAAAAElFTkSuQmCC">
+                    <h2>Artificial Intelligence</h2>
+                    <p>Artificial intelligence (AI) is a branch of computer science that focuses on creating intelligent machines that can perform tasks that would typically require human intelligence to complete.</p>
+                </div>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFWklEQVR4nO2az28UVRzAR0kgXo0Sf2GiidGDRw9qQpRFoTNuSG1jIuEv0LRoIrXAhQuxU/WiBwyRIgYWw9qImUEkIcFUZ5Zuce0ainWmFXA7s2+M7cF9y0EPfs3bMnaYnR9vZ+fNTNN+k+9ld7qd7+d93/fXexy3LuuyLp0InO/ZhGV+AMt8Ccs9b3NrSW59veshLPHTTVkAolgS/sEy/05Dyt8X9TdNMQd+aoi52ZuHtz7IZUGg+NrGpiz8bBsflwYByBQELPNvxW080fyjBU/d/eQxmBrqzw4ELAtTSQLIHAQs87eSBpApCFgSmqwB9D52Ek7v3QcLp/pbWhjc1/osExCwJFxhDYAY7P6+MDiUDU/A54RBFgCcEb/xFd/2PfGEle0wBlPv9kN9NAeLJ3b82ZR4C8u8iSVeJFmKKQA4dOjupsRfZArgbDuA2skVALYn3Dyyq+05LPMjHGtpnO+5H0v8BXZbYKjt+1MDy1vAqWahrx2AJNS5JASAuwvLr7yOZUFuyL2NuIMggUA8gWwHYjz5zA2AbIt2ALzBJSm1qvz0XOkMdKteqc/eEn6p0ctTsCS8lyiAGxXpaFoA3J5CjGceBN1iacpxS1ehW40CwP0cl4YgTb28pgFYuno9DgBh3SDRyv4+2PPUp1kDoDSTAuAHIW0PAFZbwK8ZckNwAyCBEEvCKKkJYq0QjbmJLUhTx5GuNuzonRSAIAhuAMTg2CtEY25ii6UrS/YLswTg1w26IfipVy/RdYWINHXc+cKdAFAKY3Dw2TwceC4P6hfHQwEEdYM2hEAAHr1E1xUi0tVGVADE8IEntrb04PP50CBI0w36pUjyrsTdY68QUZIAPFaQQHGvNGmJvQC0gqDMj9wOgEYsFaKlKcWoAIjbEwjEeOU0zRZor/GXPttBVRNwrGRBn3zE0pXFpIIgTTfoFTSZDkYWCARNKSJN+WsFgPJ32qWwV9BMZDBCxOkVSQBILO3RCtLV6dQBsEh7tII0pZAGgMwMRuq6+mYcAIIKmzAAqQ5GLO2Hx5Gm/MsagB3piYHEUGd5nHpXiDRFZb0FwsrjVAFYmrqbNQCvCbCzPE4VAEBxg6Urs0kDcB6WOPsDLg2xtNJLbLeA/2GJfVRGnjXE3FUuLUG6cpQVAL/y2H1Y+sf7LzyQGoBarXSPpatXkqoDMmW8LWhe3RwlHnQKIJPG21KbKd1raeqlqACCcv7/s4CsGm/LzMzMRqSpR2iLpLDuzs75zgIps8Y7pT6rPGPpSjkMQFh3554IkWiPPnh5M7caBKC44UZFBuPaJToAFCOxVWO8LfYAZX5yHH7/6RwYVy9C/ZfvAP36PViaEtrd2Tk/1WKnG6lVv4X58jjV8bid80n1R6o950hs1QKwWq6utFa9Vr0AZEv8Vj4L85e/hLlSMXTs5c4MQXM/Zkdj3UiUOiDq3I/J0Vi30kkWoJ37eZ0VxDoj1D/q2WSKL+41xdykMbKtGfaSQVr//A2wqt9EB0B5WOI/I+wQQO1w7mFTzFW7MbpNP9wJSBZbUb/zLRB8dS6sc1w6sXOR+lap3lr5mI13esMnewCV7zxUoQmCfpnBr3O0T5fJhUpyq5S6eDKX3R6Y6uh2qJ8ZBut2cRT0rN8xWFjjtDIsOQaV4T76+8XmyLYycwC2ftwLaCL4uJsGQjCAMfhx/zIAKgiGmMOJAQh4cffqeUGgmRbb0yICgcoTzISNDwZw5+q5IXQyLSa/RTU+MzMCwDn0mD7QC5XhV9v+Luwyhdf2CB2gmhkA4HUhyut+EM3Veq//kTkAZsTgR3O1ftUCqFCkv7D6IBKAdeHWnvwHMhIS5KFNLdYAAAAASUVORK5CYII=">
+                    <h2>Machine Learning</h2>
+                    <p>Machine learning (ML) is an application of artificial intelligence that uses statistical techniques to enable computers to learn and make decisions without being explicitly programmed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="work">
+        <div class="container">
+            <h1 class="text">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="working">
+                        <i class="fa-solid fa-image-portrait"></i>
+                        <h3>VS</h3>
+                        <p>VS is a Portfolio website of Vrushabh Somani. It contains all the information regarding him, right from Introduction to Contact. Portfolio showcases the skills and creativity of the user.</p><a href="https://github.com/Vrushabh182002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="working">
+                        <i class="fa-solid fa-shirt"></i>
+                        <h3>Fashonite</h3>
+                        <p>Fashonite is a website which connects you with the latest fashion trend around the globe and your favorite celebrities styles.</p>
+                        <a href="https://github.com/Vrushabh182002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="working">
+                        <i class="fa-brands fa-rocketchat"></i>
+                        <h3>Chat-z-Rocket</h3>
+                        <p>An User friendly chatting & posting website to connect with your friends and loved ones.</p>
+                        <a href="https://github.com/Vrushabh182002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="working">
+                        <i class="fa-solid fa-shop"></i>
+                        <h3>E-commerce Website</h3>
+                        <p>Get a hold off with the Latest Shopping you need to know & buy. With Amazing products ,sizes & Fits.</p>
+                        <a href="https://github.com/Vrushabh182002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Vrushabh182002" target="_blank" class="button">See More</a>
+        </div> 
+    </div>
+<!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vssomani2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9363071283</p>
+                    <p><i class="fa-solid fa-location-dot"></i>C-40, Jain Colony, <br> &emsp;&emsp;Gopal Street Choolai, <br> &emsp;&emsp;Chennai-600007.</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/vrushabh-somani-2b0603206/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Vrushabh182002" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vrushabhsomani/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="img/VRUSHABH's Resume.pdf" download class="button btn">Download CV</a>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Email-ID" required>
+                        <textarea name="Message" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" class="button btn">Submit</button>
+                    </form>
+                    <div id="recieve">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Copyright &#169; Vrushabh Somani 2023.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
