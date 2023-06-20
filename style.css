@@ -452,6 +452,7 @@ nav .fa-solid{
         position: absolute;
         right: 25px;
         cursor: pointer;
+        color: red;
     }
     .text{
         font-size: 40px;
