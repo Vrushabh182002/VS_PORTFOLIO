@@ -262,7 +262,7 @@ nav ul li a:hover::after{
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
+    grid-gap: 25px;
     margin-top: 50px;
 }
 .work{
@@ -283,7 +283,7 @@ nav ul li a:hover::after{
 }
 .working{
     width: 100%;
-    height: 100%;
+    height: 92%;
     background: grey;
     padding: 42px;
     font-size: 15px;
@@ -413,7 +413,7 @@ nav .fa-solid{
     }
     .logo a{
         font-size: 30px;
-        color: red;
+        color: white;
     }
     .text{
         margin-top: 5px;
@@ -430,6 +430,9 @@ nav .fa-solid{
     }
     .text h1{
         font-size: 36px;
+        display: inline-grid;
+        padding: 170px;
+        align-items: center;
     }
     nav .fa-solid{
         display: block;
@@ -460,7 +463,7 @@ nav .fa-solid{
         position: absolute;
         right: 25px;
         cursor: pointer;
-        color: red;
+        color: white;
     }
     .text{
         font-size: 40px;
@@ -473,7 +476,7 @@ nav .fa-solid{
     }
     .col-1 img{
         width: 100%;
-        height: 71vh;
+        height: 50vh;
         border-radius: 4%;
     }
     .col-2 h1{
