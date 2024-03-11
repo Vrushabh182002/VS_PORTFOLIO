@@ -319,7 +319,7 @@ nav ul li a:hover::after{
 }
 .working:hover{
     background: rgb(178, 25, 195);
-    transform: translateY(12px);
+    transform: translateY(-12px);
 }
 .button{
     display: block;
