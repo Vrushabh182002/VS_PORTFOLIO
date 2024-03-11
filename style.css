@@ -81,6 +81,8 @@ nav ul li a:hover::after{
 }
 .deve{
     color: mediumblue; 
+    font-size: 58px;
+    flex-wrap: wrap;
 }
 #about{
     padding: 80px 0;
