@@ -79,6 +79,9 @@ nav ul li a:hover::after{
 .text h1 span{
     color: red;
 }
+.deve{
+    color: mediumblue; 
+}
 #about{
     padding: 80px 0;
 }
