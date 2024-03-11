@@ -281,6 +281,12 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
+.work-list div{
+    transition: background 0.2s, transform 0.5s;
+}
+.work-list div:hover{
+    transform: translateY(-12px);
+}
 .working{
     width: 100%;
     height: 92%;
