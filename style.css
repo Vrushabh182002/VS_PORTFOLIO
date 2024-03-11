@@ -214,7 +214,7 @@ nav ul li a:hover::after{
     width: 80%;
 }
 #certificates ul li a{
-    color: lightskyblue;
+    color: #0000CD;
     display: flex;
     justify-content: left-center;
 }
