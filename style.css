@@ -79,11 +79,13 @@ nav ul li a:hover::after{
 .text h1 span{
     color: red;
 }
-.deve{
-    color: mediumblue; 
+.deve{ 
     font-size: 58px;
     flex-wrap: wrap;
 }
+.deve span{
+    color: red;
+};
 #about{
     padding: 80px 0;
 }
